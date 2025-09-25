@@ -1,17 +1,23 @@
-Upgrades
-  *TEMPLATE
-    desc:You get 3 times more ice cream per click!
-    passive:multiply yield of makeIceCreamButton by 3
-    
-  *scooper
-    name:Ice cream scooper
-    //this will have the description and effects provided by the template
-    
-  *icebox
-    name:Ice box
-    //this will also have the description and effects provided by the template
-    
-  *sprinkles
-    name:Sprinkles
-    desc:The dutch eat this on toast for some reason! Also, you get 3 times more ice cream per click.
-    //this will have the effects of the template, but use its own description
+Layout
+  *resources
+    contains:Resources
+    header:These are your resources.
+  *buildings
+    contains:Buildings
+    header:These are things you can build.
+    tooltip origin:left
+  *unlockables
+    contains:Upgrades, Achievements
+    names:hide
+*scratchNose
+  name:Scratch nose
+  desc:Click this to scratch your nose. Grants 1 satisfaction per click.
+  on click:yield 1 satisfaction
+*fuel
+  name:Fuel
+  desc:This is fuel for your rocket. You can't visit planets if you don't have enough fuel!
+*cheesecakeFactory
+  name:Cheesecake factory
+  desc:Combines the magic of cheese with the wonders of cake to produce 3 cheesecakes per second.
+  on tick:yield 3 cheesecakes
+  cost:100 money
