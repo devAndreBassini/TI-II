@@ -1,0 +1,17 @@
+Upgrades
+  *TEMPLATE
+    desc:You get 3 times more ice cream per click!
+    passive:multiply yield of makeIceCreamButton by 3
+    
+  *scooper
+    name:Ice cream scooper
+    //this will have the description and effects provided by the template
+    
+  *icebox
+    name:Ice box
+    //this will also have the description and effects provided by the template
+    
+  *sprinkles
+    name:Sprinkles
+    desc:The dutch eat this on toast for some reason! Also, you get 3 times more ice cream per click.
+    //this will have the effects of the template, but use its own description
